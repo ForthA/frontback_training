@@ -9,13 +9,22 @@ html, body {
   overflow: hidden;
 }
 
-.header{
+.header {
   color: #EDF0F5;
   background-color: #415167;
   padding: 30px 0;
 }
 
-.main__list{
+.main {
+  background-color: #F4F5F6;
+  height: 100%;
+}
+
+.main__list {
+  padding: 100px;
+}
+
+.main__about {
   padding: 100px;
 }
 
@@ -29,38 +38,40 @@ html, body {
 
 /* ============================== HEADER BODY ============================== */
 
-.header__content{
+.header__content {
   display: flex;
   align-items: center;
 }
 
-.header__logo{
+.header__logo {
   margin-right: 100px;
 }
-.header__logo svg{
+
+.header__logo svg {
   position: relative;
   top: 5px;
   margin-right: 10px;
 }
 
-.header__logo span{
+.header__logo span {
   font-size: 20px;
   text-transform: capitalize;
   font-weight: 900;
 }
 
-.header__form{
+.header__form {
   position: relative;
   display: flex;
 }
-.header__input{
+
+.header__input {
   min-width: 700px;
   height: 40px;
   padding: 10px;
   border-radius: 5px;
 }
 
-.header__search{
+.header__search {
   display: block;
   width: 30px;
   position: absolute;
@@ -69,11 +80,114 @@ html, body {
   background: transparent;
 }
 
-/* ============================== MAIN ============================== */
 
-.list__heading{
+/* ============================== MAIN HOME============================== */
+
+.list__heading {
   font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 50px;
+  position: relative;
+  margin-left: 60px;
 }
 
+.splide {
+  margin-bottom: 100px;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide__arrow {
+  font-size: 20px;
+}
+
+.splide__arrow--next {
+  right: -10px !important
+}
+
+.splide__arrow--prev {
+  left: -10px !important
+}
+
+.product__img {
+  margin-bottom: 10px;
+}
+
+.product__title {
+  font-size: 18px;
+}
+
+.product__title-author {
+  margin-top: 5px;
+  color: #707783;
+}
+
+.list__add-book {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  display: block;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #415167;
+  color: #F9FBFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.list__add-book:hover {
+  transform: scale(1.05);
+  background-color: #C7A17A;
+}
+
+/* ============================== MAIN ABOUT============================== */
+
+.about__wrap {
+  display: flex;
+}
+
+.about__img {
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.about__description-item:not(:first-child) {
+  font-size: 18px;
+  min-width: 350px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__description-item:last-child {
+  margin-bottom: 0;
+}
+
+.about__title {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.about__author {
+  color: #707783;
+  margin-bottom: 15px;
+}
+
+.about__charact-title {
+  color: #707783;
+}
+
+.about__description-2 {
+  font-size: 18px;
+  line-height: 180%;
+  color: #151D28;
+}
