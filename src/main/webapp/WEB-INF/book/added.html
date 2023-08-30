@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="/src/css/font.css">
   <link rel="stylesheet" href="/src/css/reset.css">
   <link rel="stylesheet" href="/src/css/style.css">
-  <title>About</title>
+  <title>AddedBook</title>
 </head>
 
 <body>
   <div class="wrapper">
+    <div class="overlay"></div>
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -35,46 +36,25 @@
     </header>
     <main class="main">
       <div class="container">
-        <div class="main__about">
-          <div class="about__wrap">
-            <img class="about__img" src="/src/images/image.svg" alt="">
-            <ul class="about__description">
-              <li class="about__description-item">
-                <h1 class="about__title">Кровыве земли</h1>
-                <p class="about__author">Майк Тайсон</p>
-              </li>
-              <li class="about__description-item">
-                <span class="about__charact-title">ID</span>
-                <span class="about__charact-value">123456</span>
-              </li>
-              <li class="about__description-item">
-                <span class="about__charact-title">Издательство</span>
-                <span class="about__charact-value">XL Media</span>
-              </li>
-              <li class="about__description-item">
-                <span class="about__charact-title">Год издания</span>
-                <span class="about__charact-value">1995</span>
-              </li>
-              <li class="about__description-item">
-                <span class="about__charact-title">Количество страниц</span>
-                <span class="about__charact-value">386</span>
-              </li>
-              <li class="about__description-item">
-                <span class="about__charact-title">Вес, г</span>
-                <span class="about__charact-value">500</span>
-              </li>
-              <li class="about__description-item">
-                <span class="about__charact-title">Возрастное ограничение</span>
-                <span class="about__charact-value">16+</span>
-              </li>
-            </ul>
-          </div>
-          <div class="about__description-2">
-            Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Буквоград назад
-            деревни алфавит рыбного безорфографичный заманивший вдали залетают возвращайся страну! Пор первую переписали
-            даль, обеспечивает инициал рукописи своих дороге залетают приставка предложения парадигматическая назад меня
-            по всей, он знаках алфавит там это грустный? Несколько мир первую прямо грамматики но журчит.
-          </div>
+        <div class="main__pop_up">
+          <h1 class="pop_up-title">Заполните значения</h1>
+          <form class="pop_up__form" action="">
+            <div class="pop_up__img-wrap">
+              <input class="pop_up__input" type="file" id="imageUpload" name="avatar">
+              <div id="preview"></div>
+            </div>
+            <input class="pop_up__input" type="text" placeholder="Название">
+            <input class="pop_up__input" type="text" placeholder="Автор">
+            <input class="pop_up__input" type="number" placeholder="ID">
+            <input class="pop_up__input" type="text" placeholder="Издательство">
+            <input class="pop_up__input" type="text" placeholder="Год издания">
+            <input class="pop_up__input" type="number" placeholder="Количество страниц">
+            <input class="pop_up__input" type="number" placeholder="Вес, г">
+            <input class="pop_up__input" type="text" placeholder="Возрастное ограничение">
+            <textarea name="pop_up__description" id="pop_up__description" cols="10" rows="5"
+              placeholder="Описание"></textarea>
+            <button class="pop_up__btn" type="submit">Сохранить</button>
+          </form>
         </div>
       </div>
     </main>
